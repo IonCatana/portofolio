@@ -1,25 +1,23 @@
 <template>
   <div id="jumbatron">
-    This is Main
-    <div class="container">
-      <div class="info_card">
-        <div>
-          <p class="experience">1 year of experience</p>
-          <h2>I'm Jr Full Stack Web <span>Developer</span> </h2>
+    <div class="container flex flex-row justify-center justify-items-center mt-8">
+      <div class="info_card ">
+        <div class="flex flex-col">
+          <p class="experience text-lg">1 year of experience</p>
+          <h2 class="text-7xl">I'm Jr Full Stack Web <span>Developer</span> </h2>
           <div class="bg_style_line">
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta officia libero nemo ex id animi
-            incidunt. Ipsam labore nihil alias, consequatur id ut molestias ratione. Impedit distinctio nulla quibusdam?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quaerat sed autem, tenetur exercitationem
-            consequuntur doloremque nulla, eius quam voluptatibus a nisi reiciendis temporibus libero itaque, qui ad
-            soluta ex.</p>
+          <p>Mi chiamo ION CATANA e sono un Junior Full Stack Web Developer con un approccio spesso positivo e attento
+            ai dettagli e
+            sin da piccolo nutro una forte passione per la tecnologia.
+          </p>
         </div>
 
         <button class="button">Read More</button>
       </div>
       <div class="jumbatron">
         <div class="img">
-          <img src="https://picsum.photos/600/600.jpg" alt="">
+          <img src="https://picsum.photos/400/400.jpg" alt="">
 
         </div>
       </div>
@@ -32,24 +30,24 @@
   margin: 10px 0px;
   width: 83px;
   height: 7px;
-  border: 1px solid green;
+  //border: 1px solid green;
 }
 
 #jumbatron {
   margin-top: 5px;
-  border: 1px solid black;
+  //border: 1px solid black;
 
   .container {
-    display: flex;
-    justify-content: space-between;
 
     .info_card {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-content: center;
       align-items: flex-start;
-      border: 1px solid blue;
+      //border: 1px solid blue;
       width: 50%;
+      height: 900px;
 
       .button {
         margin-top: 20px;
@@ -86,14 +84,18 @@
     }
 
     .jumbatron {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 50%;
-      border: 1px solid green;
+      height: 900px;
+      //border: 1px solid green;
 
       .img {
         padding: 30px;
         background-color: #D9D9D9;
         border-radius: 50%;
-        border: 1px solid red;
+        // border: 1px solid red;
       }
 
       img {

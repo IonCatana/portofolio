@@ -1,5 +1,9 @@
 <template>
   <div class="about">
-    <h1>This is an about me page</h1>
+    <h1 class="text-center text-3xl font-bold uppercase mt-8 text-emerald-400">About Me</h1>
   </div>
 </template>
+
+<style lang="scss">
+
+</style>

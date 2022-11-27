@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto flex justify-center justify-between justify-items-center content-center mt-2">
     <div class="logo">
       <a href=""><svg id="logo-77" width="105" height="40" viewBox="0 0 105 40" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -38,14 +38,14 @@
             fill="black"></path>
         </svg></a>
     </div>
-    <nav class="menu_bar font-bold">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About Me</router-link> |
-      <router-link to="/projects">Projects</router-link> |
-      <router-link to="/contact">Contact</router-link> |
+    <nav class="menu_bar text-gray-600 font-semibold flex content-center  items-center">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About Me</router-link>
+      <router-link to="/projects">Projects</router-link>
+      <router-link to="/contact">Contact</router-link>
 
     </nav>
-    <div class="search">
+    <div class="search flex items-center content-center">
       <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
     </div>
   </div>
@@ -55,11 +55,6 @@
 
 <style lang="scss">
 .container {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-
   .logo {
     display: flex;
     justify-content: center;
@@ -67,12 +62,10 @@
   }
 
   .menu_bar {
-    display: flex;
-    gap: 15px;
-
+    gap: 35px;
 
     a {
-      color: black;
+
       text-align: center;
       text-transform: uppercase;
       transition: 0.3s linear;

@@ -1,6 +1,9 @@
 <template>
   <div class="contact">
-    <h1>This is an contact page</h1>
-    <font-awesome-icon icon="fa-solid fa-user-secret" />
+    <h1 class="text-center text-3xl font-bold uppercase mt-8 text-emerald-400">Contact</h1>
   </div>
 </template>
+
+<style lang="scss">
+
+</style>
