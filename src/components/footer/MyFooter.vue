@@ -66,10 +66,21 @@
       </div>
       <div class="border_layout location_map">
         <h2 class="text-left text-3xl font-bold uppercase mt-8 mb-4">Location Map</h2>
+        <GoogleMap /> <!-- Google Map -->
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import GoogleMap from './GoogleMap.vue'
+export default {
+  name: 'MyFooter',
+  components: {
+    GoogleMap,
+  }
+}
+</script>
 
 <style lang="scss">
 #footer {
