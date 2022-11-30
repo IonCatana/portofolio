@@ -9,15 +9,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeSquare, faMapMarkerAlt, faPhoneSquareAlt, faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 // googlemaps
 import VueGoogleMaps from '@fawmi/vue-google-maps'
+
 
 /* add icons to the library */
 library.add(faUserSecret)
 library.add(faMagnifyingGlass)
-
+library.add(faLinkedin)
+library.add(faGithub, faEnvelopeSquare, faPhoneSquareAlt, faMapMarkerAlt)
 
 
 

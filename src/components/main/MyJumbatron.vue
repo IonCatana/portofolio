@@ -17,7 +17,7 @@
       </div>
       <div class="jumbatron">
         <div class="img">
-          <img src="https://picsum.photos/400/400.jpg" alt="">
+          <img src="https://picsum.photos/700/700.jpg" alt="">
 
         </div>
       </div>
@@ -88,7 +88,7 @@
       justify-content: center;
       align-items: center;
       width: 50%;
-      height: 900px;
+      height: 1000px;
       //border: 1px solid green;
 
       .img {

@@ -49,7 +49,12 @@
       <div class="border_layout quick_links ">
         <h2 class="text-left text-3xl font-bold uppercase mt-8 mb-4">quick links</h2>
         <ul>
-          <li>Careers</li>
+          <li><a href="https://www.linkedin.com/in/ion-catana-a24a8523a/">
+              <font-awesome-icon icon="fab fa-linkedin" />
+            </a></li>
+          <li><a href="https://github.com/IonCatana">
+              <font-awesome-icon icon="fab fa-github" />
+            </a></li>
           <li>
             <router-link to="/about">About Me</router-link>
           </li>
@@ -60,9 +65,16 @@
       </div>
       <div class="border_layout contact flex flex-col gap-5">
         <h2 class="text-left text-3xl font-bold uppercase mt-8 mb-4">Contact</h2>
-        <span>Via Pier Paolo Pasolini, 11, Milan, <br /> Metropolitan City of Milan</span>
-        <span>catana.ion17@yahoo.it</span>
-        <span>+39 348 4595392</span>
+        <span>
+          <font-awesome-icon class="pr-3" icon="fas fa-map-marker-alt" /><span>Cascina Merlata, Milano, MI</span>
+        </span>
+        <span>
+          <font-awesome-icon class="pr-3" icon="fas fa-envelope-square" />
+          <span>catana.ion17@yahoo.it</span>
+        </span>
+        <span>
+          <font-awesome-icon class="pr-3" icon="fas fa-phone-square-alt" /><span>+39 348 4595392</span>
+        </span>
       </div>
       <div class="border_layout location_map">
         <h2 class="text-left text-3xl font-bold uppercase mt-8 mb-4">Location Map</h2>
@@ -94,9 +106,9 @@ export default {
     width: 25%;
   }
 
-  .border_layout {
-    //border: 1px solid blue;
+  // .border_layout {
+  //   //border: 1px solid blue;
 
-  }
+  // }
 }
 </style>
