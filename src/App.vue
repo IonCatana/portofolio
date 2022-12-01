@@ -1,12 +1,11 @@
 <template>
-  <div class="container mx-auto flex  justify-between justify-items-center content-center mt-2">
-    <div class="logo">
+  <div class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
+    <div class="logo h-6 w-6 cursor-pointer">
       <a href=""><svg id="logo-77" width="105" height="40" viewBox="0 0 105 40" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path class="ccustom"
             d="M48.136 35.2381H50.8704V24.9238H48.136V35.2381ZM48.136 23.3153H50.8704V20.8624H48.136V23.3153Z"
-            fill="black">
-          </path>
+            fill="black"></path>
           <path class="ccustom"
             d="M52.6323 38.6159H55.3667V34.072H55.407C55.99 34.9566 56.935 35.5397 58.3826 35.5397C61.0366 35.5397 62.8461 33.4286 62.8461 30.091C62.8461 26.874 61.0969 24.6423 58.3625 24.6423C56.9551 24.6423 55.99 25.3058 55.3265 26.2105H55.2662V24.9238H52.6323V38.6159ZM57.7996 33.2677C56.171 33.2677 55.3064 32.0413 55.3064 30.1714C55.3064 28.3217 55.99 26.8539 57.699 26.8539C59.3879 26.8539 60.0715 28.2211 60.0715 30.1714C60.0715 32.1217 59.1869 33.2677 57.7996 33.2677Z"
             fill="black"></path>
@@ -38,20 +37,35 @@
             fill="black"></path>
         </svg></a>
     </div>
-    <nav class="menu_bar text-gray-600 font-semibold flex content-center  items-center">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About Me</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/contact">Contact</router-link>
-
+    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none"
+      viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <nav @click="button" class="gap-6 font-bold hidden w-full md:flex md:items-center md:w-auto" id="menu">
+      <ul class="pt-4 text-base uppercase text-gray-500 md:flex md:justify-between md:pt-0">
+        <li class="md:p-4 py-2 block hover:text-emerald-400"><router-link to="/">Home</router-link></li>
+        <li class="md:p-4 py-2 block hover:text-emerald-400"><router-link to="/about">About Me</router-link></li>
+        <li class="md:p-4 py-2 block hover:text-emerald-400"><router-link to="/projects">Projects</router-link></li>
+        <li class="md:p-4 py-2 block hover:text-emerald-400"><router-link to="/contact">Contact</router-link></li>
+      </ul>
     </nav>
-    <div class="search flex items-center content-center">
+    <div class="search text-emerald-400 hidden w-full md:flex md:items-center md:w-auto">
       <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
     </div>
   </div>
   <!-- Property Router View -->
   <router-view />
 </template>
+
+<script>
+// const button = document.getElementById("#menu-button");
+// const menu = document.getElementById("#menu");
+
+// button.addEventListener("click", () => {
+//   menu.classList.toggle("hidden");
+// });
+
+</script>
 
 <style lang="scss">
 .container {
@@ -65,7 +79,6 @@
     gap: 35px;
 
     a {
-
       text-align: center;
       text-transform: uppercase;
       transition: 0.3s linear;
