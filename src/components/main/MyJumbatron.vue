@@ -1,26 +1,28 @@
 <template>
   <div id="jumbatron">
-    <div class="container flex flex-row justify-center justify-items-center mt-8">
-      <div class="info_card ">
-        <div class="flex flex-col">
-          <p class="experience text-lg">1 year of experience</p>
-          <h2 class="text-7xl">I'm Jr Full Stack Web <span>Developer</span> </h2>
-          <div class="bg_style_line">
+    <div class="container py-20 flex flex-row justify-center justify-items-center mt-8">
+      <div class="grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 gap-2">
+        <div class="info_card ">
+          <div class="flex flex-col">
+            <p class="experience text-lg">1 year of experience</p>
+            <h2 class="text-7xl">I'm Jr Full Stack Web <span>Developer</span> </h2>
+            <div class="bg_style_line">
+            </div>
+            <p>Mi chiamo ION CATANA e sono un Junior Full Stack Web Developer con un approccio spesso positivo e attento
+              ai dettagli e
+              sin da piccolo nutro una forte passione per la tecnologia.
+            </p>
           </div>
-          <p>Mi chiamo ION CATANA e sono un Junior Full Stack Web Developer con un approccio spesso positivo e attento
-            ai dettagli e
-            sin da piccolo nutro una forte passione per la tecnologia.
-          </p>
+
+          <button class="button">Read More</button>
         </div>
-
-        <button class="button">Read More</button>
-      </div>
-      <div class="jumbatron">
-        <div class="img">
-          <img src="https://picsum.photos/700/700.jpg" alt="">
-
+        <div class="jumbatron">
+          <div class="img">
+            <img src="https://picsum.photos/700/700.jpg" alt="">
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -46,8 +48,7 @@
       align-content: center;
       align-items: flex-start;
       //border: 1px solid blue;
-      width: 50%;
-      height: 900px;
+
 
       .button {
         margin-top: 20px;
@@ -87,11 +88,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50%;
-      height: 1000px;
       //border: 1px solid green;
 
       .img {
+        width: 100%;
         padding: 30px;
         background-color: #D9D9D9;
         border-radius: 50%;
@@ -100,6 +100,7 @@
 
       img {
         width: 100%;
+        object-fit: contain;
         border-radius: 50%;
       }
     }

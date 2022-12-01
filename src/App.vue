@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto flex justify-center justify-between justify-items-center content-center mt-2">
+  <div class="container mx-auto flex  justify-between justify-items-center content-center mt-2">
     <div class="logo">
       <a href=""><svg id="logo-77" width="105" height="40" viewBox="0 0 105 40" fill="none"
           xmlns="http://www.w3.org/2000/svg">
